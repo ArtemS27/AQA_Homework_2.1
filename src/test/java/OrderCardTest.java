@@ -8,12 +8,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
 public class OrderCardTest {
-
-    @BeforeAll
-    public static void setupAll(){
-        WebDriverManager.chromedriver().setup();
-    }
-
+    
     @Test
     public void shouldSuccessfullySendForm(){
         open("http://localhost:9999");
